@@ -34,6 +34,10 @@ img {
   width: 100%;
 }
 
+dl, ol, ul{
+  margin-bottom: 0px;
+}
+
 @font-face {
   font-family: 'simplo_font';
   src: url('./fonts/simplo-black.otf'); /* IE9 Compat Modes */
@@ -333,6 +337,10 @@ button {
   margin-top: 10px;
 }
 
+.navbar ul:first-child{
+  padding-top: 30px;
+}
+
 .navbar li{
   margin-right: 10px;
 }
@@ -343,7 +351,11 @@ button {
   margin: 0 0.25rem;
   text-shadow: 3px 3px 3px rgb(0 0 0 / 99%);
 }
-
+.navbar a:hover{
+  color: #99252B;
+  text-shadow: none;
+  font-weight: bold;
+}
 .navbar .welcome span {
   margin-right: 0.6rem;
 }
@@ -374,7 +386,8 @@ button {
   background: url('./img/backgrounds/Top_Red_Gradient_Strip.png');
   height: 22px;
   width:100%;
-  bottom:0px
+  bottom:0px;
+  z-index: 0;
 }
 
 /* left side_bar */
@@ -418,15 +431,90 @@ button {
 
 
 /* total search area */
-.MuiAppBar-colorPrimary {
-  background-color: rgb(255,255,255,0.8)!important;
+.total_search{
+  background-color: rgba(255, 255, 255, 0.7);
+  padding:2px;
+  font-family: 'simplo_bold'
+}
+.total_search a{
+  width: 25%;
+  font-size: 26px;
+  color: #99252B;
+}
+.total_search a.active, .total_search a:hover{
+  background-color: #99252B!important;
+  color: white;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  color: white!important
+}
+.total_search .input-group{
+  padding: 0px;
+}
+.total_search .input-group input{
+  height: 45px;
+}
+.total_search .input-group input:focus, .form-control:focus, .total_search .search_button:focus{
+  border-color: white!important;
+  box-shadow: none!important
+}
+.total_search .search_button{
+  background-color: #99252B;
+  color: white;
+  margin-right: 0px!important;
 }
 
-.MuiTab-wrapper{
-  padding: 5px;
-  font-family: 'simplo_bold'!important;
-  font-size: 26px!important;
-  color: red!important;
+
+/* home_buttons */
+.home_buttons{
+  margin-top: -155px;
+  z-index: 2;
+}
+.home_buttons button{
+  position: relative;
+  background: url('./img/backgrounds/Focus Box White.png') no-repeat;
+  width: 426px;
+  height: 144px;
+  z-index: 2;
+  border: none;
+  color: #99252B;
+  padding-top: 7px;
+  padding-left: 35px;
+}
+.home_buttons button span{
+  font-size: 32px;
+  font-family:'simplo_bold';
+}
+.home_buttons button h1{
+  font-size: 38px;
+  font-family:'simplo_medium_font';
+  font-weight: bold;
+  text-transform:uppercase
+}
+
+.home_buttons .home_icon{
+  background: url('./img/buttons/home_button.png') no-repeat;
+  width: 110px;
+  height: 103px;
+}
+.home_buttons .meet_icon{
+  background: url('./img/buttons/meet_button.png') no-repeat;
+  width: 110px;
+  height: 103px;
+}
+.home_buttons .coop_icon{
+  background: url('./img/buttons/coopearte_button.png') no-repeat;
+  width: 110px;
+  height: 103px;
+}
+.home_buttons .worth_icon{
+  background: url('./img/buttons/worth_button.png') no-repeat;
+  width: 110px;
+  height: 103px;
+}
+.home_buttons .home_button{
+  display: flex;
+  align-items: center;
 }
 
 
