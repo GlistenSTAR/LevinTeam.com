@@ -17,8 +17,8 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
-  color: #333;
+  background: url('./img/backgrounds/Concrete\ Background.png');
+  width: 100%!important;
 }
 
 a {
@@ -32,6 +32,21 @@ ul {
 
 img {
   width: 100%;
+}
+
+@font-face {
+  font-family: 'simplo_font';
+  src: url('./fonts/simplo-black.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'simplo_medium_font';
+  src: url('./fonts/Simplo-Medium.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'simplo_bold';
+  src: url('./fonts/Simplo-Bold.otf'); /* IE9 Compat Modes */
 }
 
 /* Utilities */
@@ -226,7 +241,7 @@ img {
 
 /* Overlay */
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
   left: 0;
@@ -307,34 +322,136 @@ button {
   position: fixed;
   z-index: 1;
   width: 100%;
-  top: 0;
-  border-bottom: solid 1px var(--primary-color);
+  top: 20px;
   opacity: 0.9;
+  text-transform:uppercase;
 }
 
 .navbar ul {
   display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.navbar li{
+  margin-right: 10px;
 }
 
 .navbar a {
   color: #fff;
-  padding: 0.45rem;
+  padding: 0.7rem;
   margin: 0 0.25rem;
-}
-
-.navbar a:hover {
-  color: var(--primary-color);
+  text-shadow: 3px 3px 3px rgb(0 0 0 / 99%);
 }
 
 .navbar .welcome span {
   margin-right: 0.6rem;
 }
 
+.navbar .simplo_font{
+  font-family: 'simplo_font';
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.navbar .simplo_font i{
+  margin-right: 20px;
+}
+
+.navbar .nav-link{
+  font-size: 25px;
+  font-family: 'simplo_medium_font';
+}
+
+/* red grid */
+.red_grid{
+  background: url('./img/backgrounds/Top_Red_Gradient_Strip.png');
+  height: 20px;
+  width:100%
+}
+.red_grid_bottom{
+  position: absolute;
+  background: url('./img/backgrounds/Top_Red_Gradient_Strip.png');
+  height: 22px;
+  width:100%;
+  bottom:0px
+}
+
+/* left side_bar */
+.left_sidebar{
+  position: absolute;
+  top:25%;
+  left: 59px;
+  height: 584px;
+}
+.left_sidebar .icon_group{
+  position: absolute;
+  top: 37%;
+  margin-left: -15px;
+}
+.icon_group img{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 35px!important;
+  height: 35px!important;
+}
+
+/* right sidebar */
+.right_sidebar{
+  position: absolute;
+  top:25%;
+  right: 59px;
+  height: 584px;
+}
+/* .left_sidebar .icon_group{
+  position: absolute;
+  top: 37%;
+  margin-left: -15px;
+}
+.icon_group img{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 35px!important;
+  height: 35px!important;
+} */
+
+
+
+/* total search area */
+.MuiAppBar-colorPrimary {
+  background-color: rgb(255,255,255,0.8)!important;
+}
+
+.MuiTab-wrapper{
+  padding: 5px;
+  font-family: 'simplo_bold'!important;
+  font-size: 26px!important;
+  color: red!important;
+}
+
+
+.btn_login{
+  background-color: transparent;
+  color:white;
+  font-size: 19px;
+  border: 2px solid white;
+  padding:0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-shadow: 3px 3px 3px rgb(0 0 0 / 99%);
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 90%), inset 3px 3px 3px rgb(0 0 0 / 90%);
+}
+
+.second_row i{
+  margin-left: 10px;
+}
+
 /* Landing Page */
 .landing {
   position: relative;
-  background: url('./img/showcase.jpg') no-repeat center center/cover;
-  height: 100vh;
+  margin-top:20px;
+  background: url('./img/backgrounds/s169A7656.png') no-repeat ;
+  height: 93vh;
 }
 
 .landing-inner {
@@ -522,13 +639,10 @@ button {
     justify-content: center;
   }
 
-  .navbar h1 {
-    margin-bottom: 1rem;
-  }
-
   .navbar .welcome {
     display: none;
   }
+
 
   /* Profiles Page */
   .profile {
