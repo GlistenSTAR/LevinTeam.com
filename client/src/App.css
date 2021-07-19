@@ -324,7 +324,7 @@ button {
   align-items: center;
   padding: 0.7rem 2rem;
   position: fixed;
-  z-index: 1;
+  z-index: 9999;
   width: 100%;
   top: 20px;
   opacity: 0.9;
@@ -392,14 +392,15 @@ button {
 
 /* left side_bar */
 .left_sidebar{
-  position: absolute;
+  position: fixed;
   top:25%;
   left: 59px;
   height: 584px;
+  z-index: 9999;
 }
 .left_sidebar .icon_group{
   position: absolute;
-  top: 37%;
+  top: 37%; 
   margin-left: -15px;
 }
 .icon_group img{
@@ -411,7 +412,7 @@ button {
 
 /* right sidebar */
 .right_sidebar{
-  position: absolute;
+  position: fixed;
   top:25%;
   right: 59px;
   height: 584px;
@@ -462,13 +463,14 @@ button {
   background-color: #99252B;
   color: white;
   margin-right: 0px!important;
+  z-index: 0;
 }
 
 
 /* home_buttons */
 .home_buttons{
   margin-top: -155px;
-  z-index: 2;
+  z-index: 1;
 }
 .home_buttons button{
   position: relative;
@@ -516,6 +518,82 @@ button {
   display: flex;
   align-items: center;
 }
+
+/* featured properties */
+.featured{
+  margin-top:70px;
+  margin-bottom: 70px;
+}
+.featured .react-multi-carousel-list li{
+  /* height: 612px; */
+  height: 952px;
+  color: white;
+  border: 2px solid white;
+}
+.featured button{
+  border-radius: 2px!important;
+  width: 125px!important;
+  height: 198px;
+  color: white;
+  border: 2px solid white;
+  z-index: 99;
+  -webkit-border-radius: 2px!important;
+  -moz-border-radius: 2px!important;
+  -ms-border-radius: 2px!important;
+  -o-border-radius: 2px!important;
+}
+.featured .react-multiple-carousel__arrow--right::before, .react-multiple-carousel__arrow--left::before{
+  font-size: 90px!important;
+}
+.featured{
+  color: #99252B
+}
+.featured .build_info .even{
+  background-color: white;
+  height: 70px;
+  width: 100%;
+}
+.featured .build_info .odd{
+  background-color: #D9D9D9;
+  height: 70px;
+  width: 100%;
+  color:#99252B;
+  font-family: 'simplo_bold';
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.featured .capacity{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.featured .capacity i{
+  font-size: 18px;
+  z-index: 2;
+  width: 25%;
+  color: #99252B;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.featured .capacity i span{
+  font-size: 14px;  
+  margin-top:10px
+}
+.featured .price{
+  font-size: 24px;
+}
+.featured .overview{
+  color: #99252B;
+  text-align: center;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 
 .btn_login{
