@@ -12,6 +12,7 @@ import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
 
 import './App.css';
+import './App_mobile.css';
 
 const App = () => {
   useEffect(() => {
