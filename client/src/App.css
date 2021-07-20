@@ -668,7 +668,7 @@ button {
 }
 .team .teammate img{
   position: relative;
-  width: 200px;
+  width: 215px;
   height: 250px;
   z-index: 999;
   margin-top:-30px;
@@ -678,13 +678,22 @@ button {
   width: 230px;
   margin-left: -23px;
 }
+.team .teammate .rebecca .name{
+  margin-left:10px
+}
 .team .teammate .Meghan img{
   margin-left: -23px;
+}
+.team .teammate .Meghan .name{
+  margin-left:10px
 }
 .team .teammate .Matt img{
   height: 270px;
   margin-top: -40px;
   margin-left: -10px;
+}
+.team .teammate .Matt .name{
+  margin-top: -40px
 }
 .team .teammate .Anyssa img{
   width: 190px;
@@ -693,16 +702,45 @@ button {
 .team .teammate .Michelle img{
   width: 190px;
   z-index: 1;
-  margin-left: -5px;
+  /* margin-left: -5px; */
+}
+.team .teammate .Michelle .name{
+  margin-left:30px
 }
 .team .teammate .Brandon img{
   width: 190px;
   z-index: 2;
 }
+.team .teammate .Brandon .name{
+  margin-left:40px
+}
 .team .teammate .Sasha img{
   height: 290px;
   margin-top:-40px;
   z-index: 1;
+}
+.team .teammate .Sasha .name{
+  margin-top: -60px;
+  margin-left: 50px;
+}
+.team .teammate .Corey .name{
+  margin-left: 40px;
+}
+.team .teammate .name{
+  background: url('./img/backgrounds/Layer\ 9\ copy\ 6.png');
+  width: 140px;
+  height: 60px;
+  margin-top: -30px;
+  position: absolute;
+  margin-left: 20px;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#99252B;
+  font-family: 'simplo_bold';
+  font-size: 20px;
+  line-height: 1;
 }
 
 

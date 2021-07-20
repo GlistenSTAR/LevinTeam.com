@@ -38,36 +38,48 @@ export default function Team() {
         <div style={{display:'flex', padding:'0 70px', height:'200px', justifyContent: 'center', marginLeft:'-30px'}}>
           <div className="bibi"> 
             <img src="./assets/stuffs/Bibi.png"/>
+            <div className="name" align="center"><span>BIBI Bhagwandin</span></div>
           </div>
           <div className="Leda"> 
             <img src="./assets/stuffs/Leda.png"/>
+            <div className="name" align="center"><span>LEDA <br/>SCHALLER</span></div>
           </div>
           <div className="clay"> 
             <img src="./assets/stuffs/Clay.png"/>
+            <div className="name" align="center"><span>CLAYTON SHAW</span></div>
           </div>
           <div className="rebecca"> 
             <img src="./assets/stuffs/Rebecca.png"/>
+            <div className="name" align="center" ><span>REBECCA BUMB-DUFFY</span></div>
           </div>
           <div className="Meghan"> 
             <img src="./assets/stuffs/Meghan.png"/>
+            <div className="name" align="center"><span>MEGHAN ROBINSON</span></div>
           </div>
           <div className="Matt"> 
             <img src="./assets/stuffs/Matt.png"/>
+            <div className="name" align="center"><span>Matthew <br/>Levin</span></div>
           </div>
           <div className="Anyssa"> 
             <img src="./assets/stuffs/Anyssa.png"/>
+            <div className="name" align="center"><span>ANYSSA PADILLA</span></div>
           </div>
           <div className="Michelle"> 
             <img src="./assets/stuffs/Michelle.png"/>
+            <div className="name" align="center"><span>MICHELLE DEAN</span></div>
           </div>
           <div className="Brandon"> 
             <img src="./assets/stuffs/Brandon.png"/>
+            <div className="name" align="center"><span>BRANDON <br/>KEANY
+              </span></div>
           </div>
           <div className="Sasha"> 
             <img src="./assets/stuffs/Sasha.png"/>
+            <div className="name" align="center"><span>SASHA BUDDEN</span></div>
           </div>
-          <div className="clay"> 
+          <div className="Corey"> 
             <img src="./assets/stuffs/Corey.png"/>
+            <div className="name" align="center"><span>COREY <br/>EISS</span></div>
           </div>
         </div> 
       </div>
