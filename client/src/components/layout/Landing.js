@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Home from './Home'
 import Featured from './Featured'
 import Team from './Team'
+import LHT_Difference from './LHT_Difference'
 
 import left_bar from '../../img/backgrounds/bar.png'
 import right_bar from '../../img/backgrounds/bar_right.png'
@@ -35,6 +36,7 @@ const Landing = ({ isAuthenticated }) => {
         <Home />
         <Featured />
         <Team/>
+        <LHT_Difference/>
 
         <div className="right_sidebar">
           <img src={right_bar} width="2px"/>

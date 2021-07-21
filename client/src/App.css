@@ -57,6 +57,14 @@ dl, ol, ul{
   font-family: 'simplo_heavy';
   src: url('./fonts/Simplo-Heavy.otf'); /* IE9 Compat Modes */
 }
+@font-face {
+  font-family: 'simplo_light';
+  src: url('./fonts/Simplo-Light.otf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'simplo_lightIT';
+  src: url('./fonts/Simplo-LightIt.otf'); /* IE9 Compat Modes */
+}
 
 /* Utilities */
 .container {
@@ -598,6 +606,11 @@ button {
   align-items: center;
 }
 /* meet team */
+.parent_team{
+  position: relative;
+  height: 1026px;
+  width: 100%;
+}
 .team{
   position: absolute;
   height: 1026px;
@@ -674,6 +687,10 @@ button {
   margin-top:-30px;
   margin-right:-50px
 }
+.team .teammate img:hover{
+  transform: scale(1.2, 1.2);
+  transition: 0.5s ease-in-out;
+}
 .team .teammate .rebecca img{
   width: 230px;
   margin-left: -23px;
@@ -742,6 +759,87 @@ button {
   font-size: 20px;
   line-height: 1;
 }
+/* /why_us */
+.why_us{
+  position: relative;
+  background-color: white;
+  height: 1028px;
+  width: 100%;
+  margin-top: 130px;
+  padding: 30px;
+}
+.why_us hr{
+  position: relative;
+  color: #99252B;
+  width: 90%;
+  text-align: center;
+  height: 2px;
+  opacity: 1;
+  margin-top: 168px;
+  z-index: 1;
+}
+.why_us h1{
+  position: relative;
+  font-size: 38px;
+  width: 543px;
+  height: 54px;
+  background-color: #99252B;
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-family:'simplo_heavy';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -45px;
+  z-index: 3;
+}
+.why_us .content{
+  width: 90%;
+}
+.why_us .content .left_side .reviews{
+  background: url('./img/backgrounds/Layer\ 76.png') no-repeat;
+  height: 729px;
+  width: 100%;
+  padding: 70px;
+  font-family: 'simplo_heavy';
+  color: white;
+  font-size: 20px;
+  padding-top:60px;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  flex-direction: column;
+}
+.why_us .content .left_side .reviews span{
+  font-family: 'simplo_lightIT';
+}
+.why_us .content .left_side .reviews h4{
+  font-family:'simplo_medium_font';
+  font-size: 25px;
+  margin:10px;
+}
+.why_us .content .left_side .reviews h6{
+  font-family: 'simplo_light';
+  display: flex;
+  justify-content: center;
+}
+.why_us .content .left_side .reviews h6 span{
+  margin-top: 10px;
+}
+
+.why_us .content .col-md-8{
+  font-size: 25px;
+  font-family: 'simplo_light';
+  padding-left: 50px;
+  line-height: 1.4;
+}
+
+
+
 
 
 .btn_login{
