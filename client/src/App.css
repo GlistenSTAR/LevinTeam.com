@@ -388,6 +388,68 @@ button {
   font-family: 'simplo_medium_font';
 }
 
+/* navbar_change */
+.navbar_changed{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  opacity: 0.9;
+  text-transform:uppercase;
+  background: url('./img/backgrounds/Layer\ 42.png') no-repeat;
+  opacity: 1;
+  padding-top: 0px;
+  top: 0;
+  height: 120px;
+  line-height: 1;
+}
+.navbar_changed ul {
+  display: flex;
+  justify-content: flex-end;
+  /* margin-top: 10px; */
+}
+
+.navbar_changed ul:first-child{
+  padding-top: 30px;
+}
+
+.navbar_changed li{
+  margin-right: 10px;
+}
+
+.navbar_changed a {
+  color: #fff;
+  padding: 0.7rem;
+  margin: 0 0.25rem;
+  text-shadow: 3px 3px 3px rgb(0 0 0 / 99%);
+}
+.navbar_changed a:hover{
+  color: #99252B;
+  text-shadow: none;
+  font-weight: bold;
+}
+.navbar_changed .welcome span {
+  margin-right: 0.6rem;
+}
+
+.navbar_changed .simplo_font{
+  font-family: 'simplo_font';
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.navbar_changed .simplo_font i{
+  margin-right: 20px;
+}
+
+.navbar_changed .nav-link{
+  font-size: 25px;
+  font-family: 'simplo_medium_font';
+}
+
 /* red grid */
 .red_grid{
   background: url('./img/backgrounds/Top_Red_Gradient_Strip.png');
@@ -634,7 +696,7 @@ button {
   position: relative;
   width: 305px;
   background-color: #FFFFFF;
-  color: red;
+  color:#99252B;
   font-size: 38px;
   font-family: 'simplo_heavy';
   display: flex;
@@ -750,7 +812,7 @@ button {
   margin-top: -30px;
   position: absolute;
   margin-left: 20px;
-  z-index: 10000;
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -765,7 +827,6 @@ button {
   background-color: white;
   height: 1028px;
   width: 100%;
-  margin-top: 130px;
   padding: 30px;
 }
 .why_us hr{
@@ -826,6 +887,7 @@ button {
   font-family: 'simplo_light';
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .why_us .content .left_side .reviews h6 span{
   margin-top: 10px;
@@ -837,7 +899,114 @@ button {
   padding-left: 50px;
   line-height: 1.4;
 }
+/* contact_us */
+.contact_us{
+  background: url('./img/backgrounds/last_page.png') no-repeat;
+  width: 100%;
+  height: 975px;
+}
+.contact_us .heading{
+  width: 90%;
+  /* padding-top:200px */
+}
+.contact_us .heading hr{
+  position: absolute;
+  height: 2px;
+  color:#99252B;
+  width: 90%;
+  opacity: 1;
+  z-index: 1000;
+}
+.contact_us .heading h1{
+  position: relative;
+  width: 374px;
+  height: 53px;
+  font-size: 38px;
+  font-family: 'simplo_heavy';
+  color:white;
+  background-color: #99252B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1005;
+  margin-top: -10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.contact_us .row{
+  width: 85%;
+}
+.contact_us .content .col-md-5 {
+  padding-top:20px
+}
+.contact_us .content .col-md-5 h1,.contact_us .content .col-md-7 h1 {
+  font-size: 41px;
+  font-family: 'simplo_medium_font';
+  color: #99252B;
+}
+.contact_us .content .col-md-5 p{
+  padding: 10px;
+  font-family: 'simplo_light';
+  font-size: 36px;
+  color: black;
+  text-align: left;
+}
+.contact_us .arraw_image{
+  position: absolute;
+  width: 211px;
+  height: 199px;
+  background: url('./img/buttons/Layer 64.png') no-repeat;
+  margin-top: 210px;
+  margin-left: 490px;
+}
+.contact_us .col-md-7 .background{
+  background: url('./img/backgrounds/Layer\ 61.png') no-repeat;
+  /* width: 100%; */
+  height: 830px;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+.contact_us .col-md-7 h1{
+  padding:50px;
+  padding-left:150px;
+  padding-right: 180px;
+  font-size: 29px!important;
+}
+.contact_us .col-md-7 form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.1;
+}
+.contact_us .col-md-7 label{
+  font-family:'simplo_medium_font';
+  font-size: 29px;
+}
+.contact_us .col-md-7 input, .contact_us .col-md-7 textarea{
+  width: 541px;
+  height: 51px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.contact_us .col-md-7 button{
+  background-color: #99252B;
+  color: white;
+  width: 244px;
+  height: 65px;
+  font-family: 'simplo_font';
+  font-size: 33px;
+}
 
+footer{
+  z-index:99999;
+  position: relative;
+  margin-top: -20px;
+  background: url('./img/backgrounds/Layer\ 66.png') no-repeat;
+  width: 100%;
+  height: 520px;
+}
 
 
 
@@ -852,6 +1021,12 @@ button {
   padding-right: 20px;
   text-shadow: 3px 3px 3px rgb(0 0 0 / 99%);
   box-shadow: 4px 4px 4px rgb(0 0 0 / 90%), inset 3px 3px 3px rgb(0 0 0 / 90%);
+}
+.btn_login:hover{
+  color: #99252B;
+  text-shadow: none;
+  border: 2px solid #99252B;
+
 }
 
 .second_row i{
