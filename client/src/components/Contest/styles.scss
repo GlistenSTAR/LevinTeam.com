@@ -1,0 +1,132 @@
+// @import './base';
+
+body{
+  background: #F7ECDF;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card {
+  width: 105px;
+  height: 105px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(#000, .1);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// .container{
+//   max-width: 800px;
+//   min-height: 900px;
+//   margin: 0 auto;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+
+/// Mixin to place items on a circle
+/// @author Hugo Giraudel
+/// @author Ana Tudor
+/// @param {Integer} $item-count - Number of items on the circle
+/// @param {Length} $circle-size - Large circle size
+/// @param {Length} $item-size - Single item size
+@mixin on-circle($item-count, $circle-size, $item-size){
+	position: relative;
+	width: $circle-size;
+	height: $circle-size;
+	padding: 0;
+	border-radius: 50%;
+
+	> *{
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: $item-size;
+		height: $item-size;
+		margin: -($item-size / 2);
+
+		$angle: (360 / $item-count);
+		$rot: 45;
+
+		@for $i from 1 through $item-count{
+			&:nth-of-type(#{$i}){
+				transform: rotate($rot * 1deg)
+					translate($circle-size / 2)
+					rotate(($rot * 2deg) / $i);
+			}
+
+			$rot: $rot + $angle;
+		}
+	}
+}
+
+/**
+ * make element center in parent
+ * using absolute positioning
+ * @param  {boolean} $vertical
+ * @param  {boolean} $horizontal
+ */
+ @mixin centered($vertical, $horizontal){
+	position: absolute;
+
+	@if($vertical and $horizontal){
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	@else if($horizontal){
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	@else if($vertical){
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+
+.circleWrap{
+  position: relative;
+	width: 290px;
+	height: 290px;
+	border-radius: 50%;
+  background: powderblue;
+	border: 20px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.circleInner{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(rgb(240, 135, 88) 0%, rgb(229, 103, 47) 60%);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.cta{
+  @include centered(true, true);
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.circle {
+  @include on-circle($item-count: 8, $circle-size: 430px, $item-size: 10rem);
+  @include centered(true, true);
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

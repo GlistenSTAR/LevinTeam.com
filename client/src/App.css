@@ -566,7 +566,8 @@ button {
   font-size: 38px;
   font-family:'simplo_medium_font';
   font-weight: bold;
-  text-transform:uppercase
+  text-transform: uppercase;
+  line-height: initial;
 }
 
 .home_buttons .home_icon{
@@ -999,13 +1000,19 @@ button {
   font-size: 33px;
 }
 
+.contest{
+  /* width: 80%; */
+  height: 80vh;
+  padding-top: 350px;
+}
+
 footer{
   z-index:99999;
   position: relative;
   margin-top: -20px;
   background: url('./img/backgrounds/Layer\ 66.png') no-repeat;
   width: 100%;
-  height: 520px;
+  height: 70px;
 }
 .fake_backgound{
   background: url('./img/backgrounds/last_page.png') no-repeat;
@@ -1015,7 +1022,6 @@ footer{
   top:0;
   left: 0;
 }
-
 
 
 .btn_login{
