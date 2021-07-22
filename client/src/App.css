@@ -1007,7 +1007,14 @@ footer{
   width: 100%;
   height: 520px;
 }
-
+.fake_backgound{
+  background: url('./img/backgrounds/last_page.png') no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left: 0;
+}
 
 
 
