@@ -6,6 +6,9 @@ import Home from './Home'
 import Featured from './Featured'
 import Team from './Team'
 import LHT_Difference from './LHT_Difference'
+import Contact_us from './Contact_us.js'
+
+import Footer from './Footer';
 
 import left_bar from '../../img/backgrounds/bar.png'
 import right_bar from '../../img/backgrounds/bar_right.png'
@@ -14,35 +17,38 @@ import facebook_icon from '../../img/buttons/Facebook.png'
 import instagram_icon from '../../img/buttons/Instagram.png'
 
 const Landing = ({ isAuthenticated }) => {
-  const [value, setValue] = React.useState(0);
 
   if (isAuthenticated) {
     return <Redirect to='/dashboard' />;
   }
 
   return (
-    <section className='landing'>
-      <div className='dark-overlay'>
-      <div className="red_grid"></div>
-        <div className="left_sidebar">
-          <img src={left_bar} width="2px"/>
-          <div className="icon_group">
-            <img src={mail_icon}/>
-            <img src={facebook_icon}/>
-            <img src={instagram_icon}/>
+    <div style={{position:'relative'}}>
+      <section className='landing'>
+        <div className='dark-overlay'>
+        <div className="red_grid"></div>
+          <div className="left_sidebar">
+            <img src={left_bar} width="2px"/>
+            <div className="icon_group">
+              <img src={mail_icon}/>
+              <img src={facebook_icon}/>
+              <img src={instagram_icon}/>
+            </div>
           </div>
-        </div>
 
-        <Home />
-        <Featured />
-        <Team/>
-        <LHT_Difference/>
+          <Home />
+          <Featured />
+          <Team/>
+          <LHT_Difference/>
+          <Contact_us/>
 
-        <div className="right_sidebar">
-          <img src={right_bar} width="2px"/>
+          <div className="right_sidebar">
+            <img src={right_bar} width="2px"/>
+          </div>
+          <Footer />
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   ); 
 };
 
