@@ -5,7 +5,7 @@
   "dependencies": {
     "bootstrap": "^5.0.2",
     "framer-motion": "^4.1.17",
-    "node-sass": "4.14.1",
+    "node-sass": "7.0.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.1",
