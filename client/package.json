@@ -20,7 +20,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "styled-components": "^5.3.0",
-    "ua-parser-js": "^0.7.28",
+    "ua-parser-js": "^0.7.33",
     "uuid": "^8.3.2"
   },
   "scripts": {
